@@ -4,8 +4,14 @@ sudo apt -y upgrade
 
 # install dotnet in ~/.dotnet with sdk
 bash dotnet-install.sh
-echo "export DOTNET_ROOT=$HOME/.dotnet" >> $HOME/.bashrc
-echo "export PATH=$PATH:$HOME/.dotnet" >> $HOME/.bashrc
+if [ -n $DOTNET_ROOT ]
+then
+	echo "export DOTNET_ROOT=$HOME/.dotnet" >> $HOME/.bashrc
+fi
+if [ echo $PATH | grep ".dotnet" != "" ]
+then
+	echo "export PATH=$PATH:$HOME/.dotnet" >> $HOME/.bashrc
+fi
 
 # install mono
 sudo apt install apt-transport-https dirmngr gnupg ca-certificates
