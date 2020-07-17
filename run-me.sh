@@ -1,13 +1,13 @@
 # stay updated and install needed packages
 sudo apt -y update
 sudo apt -y upgrade
-sudo apt-get -y install git build-essential libasound2-dev libudev-dev glib2.0 libgl-dev qt5-default
+sudo apt-get -y install git build-essential libasound2-dev libudev-dev glib2.0 libgl-dev qt5-default libsdl2-gfx-dev
 sudo apt-get install xfonts-base xserver-xorg-input-all xinit xserver-xorg xserver-xorg-video-all
 curl -LOk 'https://github.com/libretro/RetroArch/archive/v1.7.7.tar.gz'
 tar -zxvf v1.7.7.tar.gz
 cd RetroArch-1.7.7
 sudo ./configure --enable-alsa --enable-udev --enable-floathard --enable-neon --enable-dispmanx --disable-opengl1
-sudo make
+make
 sudo make install
 cd /home/pi
 echo "export PULS_LOGIN=test5" >> $HOME/.bashrc
