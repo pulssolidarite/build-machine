@@ -1,7 +1,7 @@
 # stay updated and install needed packages
 sudo apt -y update
 sudo apt -y upgrade
-sudo atp-get -y install git build-essential libasound2-dev libudev-dev glib2.0
+sudo apt-get -y install git build-essential libasound2-dev libudev-dev glib2.0
 curl -LOk 'https://github.com/libretro/RetroArch/archive/v1.7.7.tar.gz'
 tar -zxvf v1.7.7.tar.gz
 cd RetroArch-1.7.7
