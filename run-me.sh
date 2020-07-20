@@ -14,7 +14,6 @@ echo "export PULS_LOGIN=test5" >> $HOME/.bashrc
 echo "export PULS_MDP=test5" >> $HOME/.bashrc
 source .bashrc
 
-
 # install dotnet in ~/.dotnet with sdk
 #bash dotnet-install.sh
 #if [ -n $DOTNET_ROOT ]
@@ -29,7 +28,7 @@ source .bashrc
 # install mono 5.18.0
 sudo apt install apt-transport-https dirmngr gnupg ca-certificates
 sudo apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv-keys 2FA7E0328081BFF6A14DA29AA6A19B38D3D831EF
-echo "deb https://download.mono-project.com/repo/debian buster/snapshots/5.18.0 main" | sudo tee /etc/apt/sources.list.d/mono-official-stable.list
+echo "deb https://download.mono-project.com/repo/debian stable-raspbianstretch main" | sudo tee /etc/apt/sources.list.d/mono-official-stable.list
 sudo apt update
 sudo apt install mono-complete
 
@@ -37,6 +36,10 @@ sudo apt install mono-complete
 curl -sL https://deb.nodesource.com/setup_12.x -o nodesource_setup.sh
 sudo bash nodesource_setup.sh
 sudo apt install nodejs build-essential
+
+
+# think before doning this:
+# might need to update electron to version 9
 
 # get arcade cores and games
 git clone https://github.com/pulssolidarite/arcade-sys-games.git
