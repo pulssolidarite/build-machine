@@ -14,3 +14,7 @@ Update version number in package.json
 `npm run dist`
 
 The new appImage is saved in `build/`
+
+## Update arcades
+
+`npm run deploy`
