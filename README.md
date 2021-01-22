@@ -31,7 +31,11 @@ Go to src > renderer > assets > css and execute :
 Guide : https://simulatedgreg.gitbooks.io/electron-vue/content/en/using-electron-builder.html#auto-updating
 
 `$> openssl genrsa 1024 > project.key`
+
 `$> openssl req -new -key project.key > project.csr`
+
 `$> openssl x509 -in project.csr -out project.crt -req -signkey project.key`
 
-move project.crt in project folder
+`$> base64 project.crt > certificate.txt`
+
+Move certificate.txt in project folder.
