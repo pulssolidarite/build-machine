@@ -26,9 +26,11 @@ For generate css :
 Go to src > renderer > assets > css and execute :  
 `$> ./dart-sass/sass ./sass/theme.scss ./theme.css` to generate or edit css. 
 
-## Code Singing using certificate
+## Code Singing using certificate for auto update
 
 Guide : https://simulatedgreg.gitbooks.io/electron-vue/content/en/using-electron-builder.html#auto-updating
+
+Create a certificate:
 
 `$> openssl genrsa 1024 > project.key`
 
