@@ -30,7 +30,7 @@ Go to src > renderer > assets > css and execute :
 
 Guide : https://simulatedgreg.gitbooks.io/electron-vue/content/en/using-electron-builder.html#auto-updating
 
-Create a certificate:
+Create a certificate (from https://www.youtube.com/watch?v=XrZxJsKUQR8&ab_channel=SandboxTutorials) :
 
 `$> openssl genrsa 1024 > project.key`
 
