@@ -1,6 +1,6 @@
 # Install for the AppImage build machine
 
-Run the `run-me.sh` script for fast install of :
+The `run-me.sh` lists usefull shell commands for various installations for the build machine :
 - dotnet SDK
 - mono
 - nodejs
